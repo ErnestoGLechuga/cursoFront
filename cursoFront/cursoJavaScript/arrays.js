@@ -26,3 +26,28 @@ for (let i = 0; i < arraySecreto.length; i++) {
     }
 }
 }
+
+
+//la funcion inserta un estudiante al final, y si es el parametro
+//deathCount es mayor a 0 elimina la cantidad de veces en el array
+//y al final inserta el nombre al final del array
+
+function solution(estudiantes, deathCount, nuevo) {
+    if (deathCount == 0){
+      estudiantes.push(nuevo)
+      console.log(estudiantes)
+      return estudiantes;
+      
+    } else if (deathCount > 0){
+      for (let i = 0; i < deathCount; i++) {
+        const item = estudiantes[i];
+        estudiantes.pop(item)
+      }
+       estudiantes.push(nuevo)
+    }
+    console.log(estudiantes)
+}
+
+solution(["Nico", "Zule"], 0, "Santi")
+solution(["Juan", "Juanita", "Daniela"], 1, "Julian")
+solution(["Nath","Luisa","Noru"], 2, "Cami");
