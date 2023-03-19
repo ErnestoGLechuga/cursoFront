@@ -4,17 +4,16 @@
 // console.log(frutas);
 
 
-/*
-? variable.push() sirve para insertar un elemento al final de un array
-? variable.pop() elimina el ultimo elemento de un array
-? variable.unshift() inserta un elemento al inicio de un array
-? variable.shift() elimina el primer elemento de un array
-? variable.indexOf("contenido") te regresa la posicion en el array del contenido que estas buscando
-*/
+
+//* variable.push() sirve para insertar un elemento al final de un array
+//* variable.pop() elimina el ultimo elemento de un array
+//* variable.unshift() inserta un elemento al inicio de un array
+//* variable.shift() elimina el primer elemento de un array
+//* variable.indexOf("contenido") te regresa la posicion en el array del contenido que estas buscando
+
 
 
 solution(["Huevo", "Gallina", "Vaca"])
-//solution([1, "Gallina", "Vaca"])
 
 function solution(arraySecreto){
 for (let i = 0; i < arraySecreto.length; i++) {
@@ -28,9 +27,9 @@ for (let i = 0; i < arraySecreto.length; i++) {
 }
 
 
-//la funcion inserta un estudiante al final, y si es el parametro
-//deathCount es mayor a 0 elimina la cantidad de veces en el array
-//y al final inserta el nombre al final del array
+//* la funcion inserta un estudiante al final, y si es el parametro
+//* deathCount es mayor a 0 elimina la cantidad de veces en el array
+//* y al final inserta el nombre al final del array
 
 function solution(estudiantes, deathCount, nuevo) {
     if (deathCount == 0){
